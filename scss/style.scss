@@ -269,6 +269,11 @@ section article p {
 .patrocinador-text {
     font-size: 17px;
     }
+.section-padding {
+    padding-top:10px ;
+}
+
+
 .contact {
     margin-bottom: 150px;
     }
@@ -301,6 +306,10 @@ footer {
 
 @media(max-width: 767px) {
 
+    html {
+        filter: saturate(180%);
+    }
+
     .navbar-nav {
         text-align: center;
     }
@@ -315,15 +324,13 @@ footer {
 
     .carousel-caption {
         bottom: 125px;
-    }
-
-    .carousel-caption h5 {
+        h5 {
         font-size: 17px;
-    }
-
-    .carousel-caption a {
+        }
+        a {
         padding: 10px 15px;
         font-size: 15px;
+        }
     }
 
     .about-img {
@@ -346,10 +353,6 @@ footer {
         margin-bottom: 30px;
     }
 
-    .section-padding {
-        padding: 50px;
-    }
-
     .slideroster  {
         width: 100% !important;
     }
@@ -357,9 +360,8 @@ footer {
         height: 100px;
         width: auto;
     }
-    .patrocinador-text{
-    padding-top: 50px;
-    text-align: center;
+    #contacto .container {
+        max-width: 800px;
     }
 }
 @media(max-width: 500px) {
@@ -377,6 +379,9 @@ footer {
         padding: 10px;
         }
      }
+    .img-patrocinador {
+      max-width: 70%;  
+    }
 }
 @media(max-width: 344px) {
     .juegos {

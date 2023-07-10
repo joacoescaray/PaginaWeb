@@ -257,6 +257,10 @@ section article p {
   font-size: 17px;
 }
 
+.section-padding {
+  padding-top: 10px;
+}
+
 .contact {
   margin-bottom: 150px;
 }
@@ -284,6 +288,9 @@ footer a:hover {
 
 /* MEDIA */
 @media (max-width: 767px) {
+  html {
+    filter: saturate(180%);
+  }
   .navbar-nav {
     text-align: center;
   }
@@ -320,9 +327,6 @@ footer a:hover {
   .card {
     margin-bottom: 30px;
   }
-  .section-padding {
-    padding: 50px;
-  }
   .slideroster {
     width: 100% !important;
   }
@@ -330,9 +334,8 @@ footer a:hover {
     height: 100px;
     width: auto;
   }
-  .patrocinador-text {
-    padding-top: 50px;
-    text-align: center;
+  #contacto .container {
+    max-width: 800px;
   }
 }
 @media (max-width: 500px) {
@@ -347,6 +350,9 @@ footer a:hover {
   }
   #galeria .content {
     padding: 10px;
+  }
+  .img-patrocinador {
+    max-width: 70%;
   }
 }
 @media (max-width: 344px) {
