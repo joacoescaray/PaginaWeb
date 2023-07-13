@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  filter: saturate(230%);
+}
+
 body {
   background: #000000;
 }
@@ -301,9 +305,6 @@ footer a:hover {
 
 /* MEDIA */
 @media (max-width: 767px) {
-  html {
-    filter: saturate(180%);
-  }
   .navbar-nav {
     text-align: center;
   }
