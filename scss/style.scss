@@ -115,19 +115,36 @@ h1 {
 }
 
 .form-control {
-    border-color: rgba(55, 4, 85, 0.719)
+    border-color: rgba(55, 4, 85, 0.719);
 }
 
 .img-fluid {
     max-width: 80%;
 }
 
-
 .bg-dark {
     background-color: #000;
     color: #000;
 }
 
+.card {
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform .6s;
+    overflow: hidden;
+    &:hover {
+        box-shadow: 0 0.2rem 0.7rem $colorBase;
+        transition: 0.2s ease;
+        transform: scale(1.1);
+        transition: .2s ease;
+    }
+}
+
+.about-text {
+    padding-top: 100px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
 
 /*ROSTER*/
 
@@ -170,26 +187,28 @@ section article p {
     color: #ffffff;
 }
 
-
-.about-text {
-    padding-top: 100px;
-    font-size: 17px;
-    color: rgb(255, 255, 255);
+.textoestadisticas {
+    color: #ffffff;
 }
 
-.card {
-    margin-bottom: 30px;
-    text-align: center;
+.stats {
+    padding: 20px;
+    p {
+        margin:0px;
+    } 
+}
+.datos {
     transition: transform .6s;
     overflow: hidden;
+    text-align: center;
     &:hover {
-        box-shadow: 0 0.2rem 0.7rem $colorBase;
-        transition: 0.2s ease;
         transform: scale(1.1);
-        transition: .2s ease;
+        transition: .9s ease;
     }
 }
 
+
+/*GALERIA*/
 
 #galeria{
 
@@ -219,31 +238,8 @@ section article p {
     }
 }
 
-.textoestadisticas {
-    color: #ffffff;
-}
 
-.stats {
-    padding: 20px;
-    p {
-        margin:0px;
-    } 
-}
-.datos {
-    transition: transform .6s;
-    overflow: hidden;
-    text-align: center;
-    &:hover {
-        transform: scale(1.1);
-        transition: .9s ease;
-    }
-}
-
-.img-patrocinador {
-    max-width: 40%;
-    height: auto ;
-}
-
+/* PATROCINADORES */
 
 .patrocinador{
     @include centro;
@@ -270,7 +266,10 @@ section article p {
         transition: 0.3s ease;
     }
 }
-
+.img-patrocinador {
+    max-width: 40%;
+    height: auto ;
+}
 .patrocinador-text {
     font-size: 17px;
     }

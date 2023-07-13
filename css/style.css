@@ -118,6 +118,25 @@ h1 {
   color: #000;
 }
 
+.card {
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.6s;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 0 0.2rem 0.7rem #39005C;
+  transition: 0.2s ease;
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.about-text {
+  padding-top: 100px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+}
+
 /*ROSTER*/
 .containere {
   text-align: center;
@@ -159,25 +178,28 @@ section article p {
   color: #ffffff;
 }
 
-.about-text {
-  padding-top: 100px;
-  font-size: 17px;
-  color: rgb(255, 255, 255);
+.textoestadisticas {
+  color: #ffffff;
 }
 
-.card {
-  margin-bottom: 30px;
-  text-align: center;
+.stats {
+  padding: 20px;
+}
+.stats p {
+  margin: 0px;
+}
+
+.datos {
   transition: transform 0.6s;
   overflow: hidden;
+  text-align: center;
 }
-.card:hover {
-  box-shadow: 0 0.2rem 0.7rem #39005C;
-  transition: 0.2s ease;
+.datos:hover {
   transform: scale(1.1);
-  transition: 0.2s ease;
+  transition: 0.9s ease;
 }
 
+/*GALERIA*/
 #galeria img {
   text-align: center;
   align-items: center;
@@ -207,32 +229,7 @@ section article p {
   margin: 20px;
 }
 
-.textoestadisticas {
-  color: #ffffff;
-}
-
-.stats {
-  padding: 20px;
-}
-.stats p {
-  margin: 0px;
-}
-
-.datos {
-  transition: transform 0.6s;
-  overflow: hidden;
-  text-align: center;
-}
-.datos:hover {
-  transform: scale(1.1);
-  transition: 0.9s ease;
-}
-
-.img-patrocinador {
-  max-width: 40%;
-  height: auto;
-}
-
+/* PATROCINADORES */
 .patrocinador {
   text-align: center;
   align-items: center;
@@ -258,6 +255,11 @@ section article p {
   transition: 0.9s ease;
   box-shadow: 0 0.1rem 0.4rem #39005C;
   transition: 0.3s ease;
+}
+
+.img-patrocinador {
+  max-width: 40%;
+  height: auto;
 }
 
 .patrocinador-text {
